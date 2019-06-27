@@ -1,0 +1,11 @@
+1. I would like to see the votes achieved per dollar spent for each presidential candidate. This would involve summing up the total votes per candidate from each of the states and a join between our view with transaction totals and our secondary dataset with presidential votes. We need to normalize the presidential names on both tables in order to join them.
+
+2. I would like to see which PAC's donated to the most successful candidate. This would involve summing up the total votes per candidate and then finding all the transactions for the candidate with the most total votes via a join with Independent_Expenditure on name or cand_id. If we use cand_id there might not have to be any data transforms but there still might be some name normalizations required to actually get the cand_id.
+
+3. I would like to see how much each of these PAC's donated to the most successful candidate. This would involve the same query as number 2 but also sum up each of the transactions. The same data transformations apply.
+
+4. My query will output House of Representative candidates who appear in the House_Of_Rep_Election_Result table that don’t appear in the Candidate_Summary table (which tells us who didn’t receive any PAC money). This involves joining these two tables and using a subquery to find which candidates are not in the subquery. This also involves using the NOT operator. This query only uses data from 2012-2018.
+
+5. My query will count total votes received for each senator who did not receive PAC money. This involves joining Candidate_Summary and Senate_Election_Result and using a subquery of Candidate_Summary to see which candidates didn’t take PAC money (using NOT operator). This query will utilize the COUNT function as well to count the total votes received. This query only uses data from 2012-2018.
+
+6. My query will calculate which senator received the highest percent of the votes for each state, and will combine this with which PAC donated the most to each state to see if the PAC’s party affiliation equates with the senator’s party affiliation. This involves joining Senate_Election_Result with Congressional_Candidate_Disbursements. This query will use grouping by, summing, and averaging. This query only uses data from 2012-2018.

@@ -1,0 +1,17 @@
+The dataset we are choosing is a collection of Congressional Candidate Financial Summaries for the years 2012, 2014, 2016, and 2018.
+
+It can be found at https://public.enigma.com/browse/collection/congressional-candidate-summary/732e0ca0-4a11-4858-a6f5-6f2f2036a2fa.
+
+The data includes the candidates name, their party, and their financial summaries. We hope to see if the parties are equally funded and if a more funded candidate is more likely to be successful.
+
+One interesting note is the candidate with the most ending cash was Donald Trump at $33,086,869 and the second is almost half with Elizabeth Warren at $15,627,661. Another interesting relationship is 9 out of the top 10 candidates with the largest individual contributions are part of the democratic party. Surprisingly, the grand total of all the candidates individual contributions is only $132,578,209. These insights were all from the 2018 candidate summary.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Our 2nd dataset contains election results from the U.S. President, the Senate, and the House of Representatives. 
+
+Our data can be found here: https://electionlab.mit.edu/data
+
+The data includes information of candidates and their results categorized by state (or county in one file). It also includes their party and total votes from each state (or county in one file). 
+
+One interesting note is that we noticed that one our tables contained inconsistent reporting of party affiliation for some of the candidates. 

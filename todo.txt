@@ -1,0 +1,8 @@
+Change year from into to YEAR
+remove all years before 2012
+drop district column
+combine house of rep and senate
+clean names in candidate_summary
+clean names in rep and senate   done
+clean names in president
+Delete single letters, %. , /%, II, III, IV

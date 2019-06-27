@@ -1,0 +1,21 @@
+We cannot currently combine FEC_Federal_Campaign_Contribution years, because the field transaction_dt is different between tables. We need apache beam to fix the data.
+
+The 4 table years from Congressional_Candidate_Disbursements had vastly different columns between them (for example, there were 13 columns that were found being in either 2012 or 2018). A potential solution would've been to create the new table and just add every column, even if it meant having many "null" values for many of the records. Another idea could've been combining the tables only on the columns in which all 4 years shared in common. Except of course that would've omitted tons of data.
+
+New tables are found in FEC_Information dataset
+
+For Milestone 5:
+
+For our FEC_Federal_Campaign_Contribution dataset, the year 2018 has its "transaction_dt" column set as a integer we would like to to be a DATE type instead. The other 3 year tables have transaction_dt as a TIMESTAMP and so we are changing it to a DATE type.
+
+pardo.py turns integers into DATE type
+pardoTimestampToDate turns TIMESTAMP's into DATE type
+
+------------------------------------------------------
+For Milestone 10: 
+
+We merged the results of the House of Representatives table with the Senate table.
+
+We changed the data type from 'Integer' to 'Date' in all 3 tables (HOR_and_Senate_Result, President_By_County_Result, President_By_State_Result).
+We changed the candidate names formatting in our 3 new tables as well as Candidate_Summary in order to be able to join on the candidate names.  
+We deleted an empty column (notes) from the President_By_State_Result table.

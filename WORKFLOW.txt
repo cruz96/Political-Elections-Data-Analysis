@@ -1,0 +1,7 @@
+We will work on dataset2
+
+1. apply a query, Query_Senator_Vote_Results_Table
+>>
+2. run beam pipeline, Beam_Senator_Cleaning
+>>
+3. create table, Senator_Create_Table
